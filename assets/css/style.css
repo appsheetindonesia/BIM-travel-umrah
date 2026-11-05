@@ -886,12 +886,13 @@ ul[role="list"], ol[role="list"] { list-style: none; padding: 0; }
 }
 .tahap-card .step-line {
   position: absolute;
-  top: 34px; left: 28px; right: 28px;
+  top: 80px; left: 82px; right: 28px;
   height: 1px;
   background: linear-gradient(90deg, rgba(198, 166, 106, 0.5), rgba(198, 166, 106, 0.06));
 }
 .tahap-num {
-  position: relative;
+  position: absolute;
+  top: 10px; left: 28px;
   display: inline-grid;
   place-items: center;
   width: 54px; height: 54px;
