@@ -425,9 +425,9 @@ ul[role="list"], ol[role="list"] { list-style: none; padding: 0; }
 .nav-mobile.is-open li:nth-child(8) { transition-delay: 410ms; }
 .nav-mobile a {
   display: block;
-  padding: 14px 4px;
+  padding: 12px 4px;
   font-family: "Fraunces", Georgia, serif;
-  font-size: clamp(1.6rem, 7vw, 2.2rem);
+  font-size: clamp(1.2rem, 5vw, 1.6rem);
   font-weight: 500;
   color: #fff;
   text-decoration: none;
@@ -435,11 +435,11 @@ ul[role="list"], ol[role="list"] { list-style: none; padding: 0; }
 }
 .nav-mobile a span {
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-weight: 600;
   letter-spacing: 0.2em;
   color: var(--champagne-400);
-  margin-right: 14px;
+  margin-right: 10px;
   vertical-align: middle;
 }
 .nav-mobile-foot {
