@@ -156,7 +156,7 @@ ul[role="list"], ol[role="list"] { list-style: none; padding: 0; }
   color: #F4F1E8;
 }
 
-.section-head { max-width: 720px; margin-bottom: clamp(36px, 5vw, 64px); }
+.section-head { max-width: 720px; margin-bottom: clamp(36px, 5vw, 64px); text-align: center; }
 .section-head--center { margin-inline: auto; text-align: center; }
 
 .eyebrow {
@@ -185,17 +185,18 @@ ul[role="list"], ol[role="list"] { list-style: none; padding: 0; }
   color: var(--champagne-400);
 }
 
-.section-title { margin-top: 18px; color: var(--emerald-950); }
-.section--dark .section-title { color: #FFFFFF; }
+.section-title { margin-top: 18px; color: var(--emerald-950); text-align: center; }
+.section--dark .section-title { color: #FFFFFF; text-align: center; }
 
 .section-lead {
   margin-top: 16px;
   color: var(--muted);
   font-size: 1.05rem;
   max-width: 60ch;
+  text-align: center;
 }
-.section-head--center .section-lead { margin-inline: auto; }
-.section--dark .section-lead { color: rgba(244, 241, 232, 0.72); }
+.section-head--center .section-lead { margin-inline: auto; text-align: center; }
+.section--dark .section-lead { color: rgba(244, 241, 232, 0.72); text-align: center; }
 
 /* ---------- 4. Buttons --------------------------------------------------- */
 .btn {
@@ -507,7 +508,10 @@ ul[role="list"], ol[role="list"] { list-style: none; padding: 0; }
     radial-gradient(90% 70% at 18% 78%, rgba(7, 31, 28, 0.55), transparent 60%);
 }
 
-.hero-inner { max-width: 880px; }
+.hero-inner {
+  max-width: 880px;
+  text-align: center;
+}
 .hero-eyebrow {
   display: inline-flex;
   align-items: center;
@@ -544,6 +548,7 @@ ul[role="list"], ol[role="list"] { list-style: none; padding: 0; }
   font-family: "Fraunces", Georgia, serif;
   font-size: clamp(1.15rem, 0.9rem + 1vw, 1.5rem);
   color: rgba(255, 255, 255, 0.92);
+  justify-content: center;
 }
 .hero-tagline::before, .hero-tagline::after {
   content: "";
@@ -552,7 +557,13 @@ ul[role="list"], ol[role="list"] { list-style: none; padding: 0; }
   background: linear-gradient(90deg, transparent, rgba(198, 166, 106, 0.9));
 }
 .hero-tagline::after { background: linear-gradient(90deg, rgba(198, 166, 106, 0.9), transparent); }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
+  justify-content: center;
+}
 
 /* Countdown card — mengambang menembus tepi hero */
 .countdown-wrap { position: relative; margin-top: -150px; z-index: 5; }
