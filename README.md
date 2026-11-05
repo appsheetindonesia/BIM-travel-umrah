@@ -67,7 +67,7 @@ Desain mengikuti arahan **UIRD (User Interface Requirements Document)**:
 ## Struktur File
 
 ```
-website/
+BIM-travel-umrah/
 ├── index.html                    # Halaman utama (12 section)
 ├── kebijakan-privasi.html        # Halaman legal
 ├── ketentuan-penggunaan.html     # Halaman legal
@@ -86,7 +86,26 @@ website/
         └── videos/               # 5 thumbnail video
 ```
 
-41 file secara keseluruhan.
+42 file secara keseluruhan (termasuk README).
+
+### Menjalankan secara lokal
+
+```bash
+git clone https://github.com/appsheetindonesia/BIM-travel-umrah.git
+cd BIM-travel-umrah
+python -m http.server 8123
+# buka http://127.0.0.1:8123/
+```
+
+### Mengaktifkan countdown
+
+Edit `assets/js/main.js`, isi tanggal keberangkatan yang sudah disetujui:
+
+```js
+var NEXT_DEPARTURE = "2026-12-27T09:00:00+07:00";
+```
+
+Biarkan `null` untuk menampilkan status "jadwal sedang disiapkan".
 
 ---
 
@@ -105,21 +124,9 @@ website/
 
 Karena ini situs statis, Anda bisa langsung meng-deploy:
 
-### Vercel
-```bash
-# Push ke GitHub, lalu impor repositori di vercel.com
-```
-
-### Netlify
-```bash
-# Drag & drop folder website/ ke netlify.com, atau hubungkan GitHub
-```
-
-### GitHub Pages
-```bash
-# Aktifkan GitHub Pages di Settings → Pages → Branch: main
-# Situs akan tersedia di: https://appsheetindonesia.github.io/BIM-travel-umrah/
-```
+- **Vercel:** impor repositori di vercel.com — tanpa build command, output directory root.
+- **Netlify:** hubungkan repositori GitHub — publish directory root, tanpa build.
+- **GitHub Pages:** Settings → Pages → Source: branch `main`, folder `/ (root)`. Situs tersedia di https://appsheetindonesia.github.io/BIM-travel-umrah/
 
 ---
 
@@ -128,7 +135,7 @@ Karena ini situs statis, Anda bisa langsung meng-deploy:
 1. **Telepon & email tidak disalin** — Situs sumber hanya menampilkan placeholder Elementor (`info@example.com`, `+1 859...`). Karena tidak terverifikasi, kontak telepon/email palsu **tidak ada** di website ini. Silakan isi melalui CMS atau edit langsung di `index.html` bagian Kontak.
 2. **Data paket 2023–2024 adalah historis** — Ditampilkan di bagian **Arsip Paket** sebagai dokumentasi program yang pernah terselenggara. **Bukan penawaran aktif.** Untuk jadwal & harga terkini, konsultasi langsung ke tim BIM Travel.
 3. **Media sosial resmi** hanya Instagram dan TikTok (@pt.bimtourandtravel) yang terverifikasi dari situs sumber.
-4. **Izinhak penggunaan** logo, foto, dan video harus dikonfirmasi kepada PT BIM Tour & Travel sebelum produksi.
+4. **Izin hak penggunaan** logo, foto, dan video harus dikonfirmasi kepada PT BIM Tour & Travel sebelum produksi.
 
 ---
 
