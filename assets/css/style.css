@@ -423,7 +423,7 @@ ul[role="list"], ol[role="list"] { list-style: none; padding: 0; }
 .nav-mobile.is-open li:nth-child(6) { transition-delay: 310ms; }
 .nav-mobile.is-open li:nth-child(7) { transition-delay: 360ms; }
 .nav-mobile.is-open li:nth-child(8) { transition-delay: 410ms; }
-.nav-mobile a {
+.nav-mobile > ul a {
   display: block;
   padding: 12px 4px;
   font-family: "Fraunces", Georgia, serif;
@@ -433,7 +433,7 @@ ul[role="list"], ol[role="list"] { list-style: none; padding: 0; }
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
-.nav-mobile a span {
+.nav-mobile > ul a span {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 0.6rem;
   font-weight: 600;
